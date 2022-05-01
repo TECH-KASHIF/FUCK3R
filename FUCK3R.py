@@ -382,14 +382,15 @@ sim = random.randint(2e4, 4e4)
 header = {'x-fb-connection-bandwidth': repr(bd), 'x-fb-sim-hni': repr(sim), 'x-fb-net-hni': repr(sim),'x-fb-connection-quality': 'EXCELLENT', 'user-agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.3','x-fb-connection-type': 'unknown','content-type': 'application/x-www-form-urlencoded', 'x-fb-http-engine': 'Liger'}
 logo ="""   
    
-888    888 888     888 888b    888 88888888888 8888888888 8888888b.            
-888    888 888     888 8888b   888     888     888        888   Y88b           
-888    888 888     888 88888b  888     888     888        888    888           
-8888888888 888     888 888Y88b 888     888     8888888    888   d88P           
-888    888 888     888 888 Y88b888     888     888        8888888P"            
-888    888 888     888 888  Y88888     888     888        888 T88b             
-888    888 Y88b. .d88P 888   Y8888     888     888        888  T88b            
-888    888  "Y88888P"  888    Y888     888     8888888888 888   T88b 
+
+  _  __           _____ _    _ _____ ______ 
+ | |/ /    /\    / ____| |  | |_   _|  ____|
+ | ' /    /  \  | (___ | |__| | | | | |__   
+ |  <    / /\ \  \___ \|  __  | | | |  __|  
+ | . \  / ____ \ ____) | |  | |_| |_| |     
+ |_|\_\/_/    \_\_____/|_|  |_|_____|_|     
+                                            
+                                            
 
 
 
